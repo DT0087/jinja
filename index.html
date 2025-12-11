@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="神社, 神社巡り, 神社めぐり, 神社観光, 神社めぐり東京, 神社巡り東京, 神社観光東京, 神社巡りスポット, 神社巡りコース, 神社巡りおすすめ, 神社巡り初心者, 神社巡りコース東京, 神社巡りスポット東京, 神社巡りおすすめ東京, 神社巡り初心者東京">
+    <meta name="description" content="神社巡りは、日本の伝統文化を体験できる観光スポットです。神社巡りのスポットやコース、おすすめの神社巡りスポット、初心者向けの神社巡りコースなどを紹介します。">
+    <title>ENISI - 神々しい縁 - 日本の伝統文化</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/announce.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header__inner">
+            
+            <div class="header__logo">
+                <a href="index.html" class="logo"><h1>ENISI</h1></a>
+            </div>
+
+            <button id="js-hamburger" type="button" class="hamburger" aria-controls="navigation" aria-expanded="false" aria-label="メニューを開く">
+                <span class="hamburger__line"></span>
+                <span class="hamburger__text"></span>
+            </button>
+
+            <div class="header__nav-area js-nav-area" id="navigation">
+                <nav id="js-global-navigation" class="global-navigation">
+                    <ul class="global-navigation__list">
+                        <li>
+                            <a href="index.html" class="global-navigation__link">
+                                ホームページ
+                            </a>
+                        </li>
+                        <li>
+                            <button type="button" class="global-navigation__link -accordion js-sp-accordion-trigger" aria-expanded = 'false'    aria-controls="accordion1">巡り合い</button>
+                            <div id="accordion1" class="accordion js-accordion">
+                                <ul class="accordion__list">
+                                    <li>
+                                         <a href="jinjya.html" class="accordion__link">神社</a>
+                                    </li>
+                                    <li>
+                                        <a href="#ivent" class="accordion__link">行事</a>
+                                    </li>
+                                    <li>
+                                        <a href="#section3" class="accordion__link">地図</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <button type="button" class="global-navigation__link -accordion js-sp-accordion-trigger" aria-expanded = 'false'    aria-controls="accordion1">お参り</button>
+                            <div id="accordion1" class="accordion js-accordion">
+                                <ul class="accordion__list">
+                                    <li>
+                                        <a href="mana.html" class="accordion__link">参拝マナー</a>
+                                    </li>
+                                    <li>
+                                         <a href="sakai.html" class="accordion__link">境内の紹介</a>
+                                    </li>
+                                    
+                            
+                                </ul>
+                            </div>
+                        </li>
+                        
+                        <li>
+                            <a href="gallery.html" class="global-navigation__link">ギャラリー</a>
+                        </li> 
+                        <li>
+                            <a href="#goods" class="global-navigation__link">グッズ</a>
+                        </li> 
+                        
+                    </ul>
+                    <div id="js-focus-trap" tabindex="0"></div>
+                </nav>
+            </div>
+        </div>
+        
+    </header>
+
+    <div class="container" >
+        
+        <div class="slideshow-container" id="TOP">
+            <div class="text" id="slide-text">
+                <a href="index.html" alt="ENISI" style="opacity: 1;">ENISI</a>
+                <h1>縁</h1>
+                <p>えにし</p>
+            </div>
+            <div class="slides">
+                <img src="images/haru.jpg" alt="Slide 1">
+            </div>
+            <div class="slides">
+                <img src="images/natu2.jpg" alt="Slide 2">
+            </div>
+            <div class="slides">
+                <img src="images/aki.jpg" alt="Slide 3">
+            </div>
+            <div class="slides">
+                <img src="images/fuyu.jpg" alt="Slide 4">
+            </div>
+        </div>
+        
+        <section id="home" class="section">
+            <p class="fade-in" id="con">神々しい<br><span>～縁～</span><br>それは、神秘と奇跡に満ちた、魂の響き合い。<br>
+                それは出会いであり、再会であり、あるいは遥か昔から紡がれた約束の証。どれほどの時を超えようとも、その結び目は決してほどけることはなく、ただ静かに、けれど確かに、運命の中に息づいている。</p>
+        </section>
+
+        <section id="home" class="section">
+            <p class="fade-in" id="con">縁を結びよう<br><span>～東京編～</span></p>
+        </section>
+
+        <section id="shrines" class="section1">
+            <div class="jinja_title" id="meet">
+                <h2 class="fade-in">巡り合い<span>fateful encounter</span></h2>
+                <a href="jinjya.html" class="fade-in">MORE</a>
+            </div>
+            <div class="content_wrapper"><!--flexコンテナ-->
+                <div class="content_img fade-in"><!--flexアイテム：右（画像）-->
+                    <a href="jinjya.html #kandamyoujin"><img src="images/kandamyoujin.jpg" alt="神田神社"></a>
+                </div>
+                <div class="content_text"><!--flexアイテム：左（文章）-->
+                    <h2 class="fade-in">神田神社</h2>
+                        <p class="jinja_name fade-in">
+                            東京都千代田区にある歴史ある神社です。神田、日本橋、秋葉原など108か町の総氏神であり、神田祭を行う神社として知られています。<br>
+                            730年に創建されたと伝えられ、平安時代の武将・平将門が祀られています。朱塗りの本殿は、江戸時代の建築様式を今に伝えています。<br>
+                            秋葉原に近いため、電気街の守り神としても信仰されています。近年は、アニメやゲームとのコラボレーションも行っています。神田神社は、歴史と文化が息づく神社であり、多くの人々に親しまれています。
+                        </p>
+                </div>   
+            </div>
+            <div class="content_wrapper"><!--flexコンテナ-->
+                <div class="content_text"><!--flexアイテム：左（文章）-->
+                    <h2 class="fade-in">明治神宮</h2>
+                        <p class="jinja_name fade-in">
+                            明治天皇と昭憲皇太后をお祀りする神社で、都会の喧騒を忘れさせる豊かな緑に囲まれた静謐な空間です。<br>
+                            広大な境内には、樹齢100年を超える木々が生い茂り、四季折々の美しい景色を楽しむことができます。<br>
+                            初詣では日本一の参拝者数を誇り、多くの方が訪れます。また、結婚式や七五三など、人生の節目を祝う場所としても親しまれています。
+                        </p>
+                </div>
+                <div class="content_img fade-in"><!--flexアイテム：右（画像）-->
+                    <a href="jinjya.html #meijijingu"><img src="images/meijijingu.jpg" alt="明治神宮"></a>
+                </div>
+            </div>
+            <div class="content_wrapper"><!--flexコンテナ-->
+                <div class="content_img fade-in"><!--flexアイテム：右（画像）-->
+                    <a href="jinjya.html #yushima"><img src="images/yushima.jpg" alt="湯島天満宮"></a>
+                </div>
+                <div class="content_text"><!--flexアイテム：左（文章）-->
+                    <h2 class="fade-in">湯島天満宮</h2>
+                        <p class="jinja_name fade-in">
+                            東京都文京区にある学問の神様として知られる神社です。菅原道真公を祀り、学問成就や合格祈願に訪れる人が絶えません。<br>
+                            境内には、道真公が愛した梅の花が咲き誇り、2月には「文京梅まつり」が開催されます。また、境内にある「男坂」は、急な階段として有名で、近年パワースポットとしても注目されています。その他にも、宝物殿や湯島聖堂などの見どころもあります。</p>
+                </div>   
+            </div>
+
+                
+        </section>
+        
+        <section class="section2" id="ivent">
+            <div class="jinja_title">
+                <h2 class="fade-in">年中行事<span>Traditional events</span></h2>
+                <a href="" class="fade-in">MORE</a>
+            </div>
+            <div id="events">
+                <div class="arrow" onclick="prevSlide()">&#9665;</div>
+                <div class="slider-container fade-in">
+                    <div class="slider">
+                        <div class="slide2">
+                            <img src="images/hatumoude.jpg" alt="初詣">
+                            <p>１月１日初詣</p>
+                        </div>
+                        <div class="slide2">
+                            <img src="images/saitansai.jpg" alt="歳旦祭">
+                            <p>１月１日 歳旦祭</p>
+                        </div>
+                        <div class="slide2">
+                            <img src="images/setubun.jpg" alt="節分">
+                            <p>２月３日 節分</p>
+                        </div>
+                        <div class="slide2">
+                            <img src="images/maxresdefault.jpg" alt="祈年祭">
+                            <p>４月３日 祈年祭</p>
+                        </div>
+                        <div class="slide2">
+                            <img src="images/DSCN4693_s.jpg" alt="大祓">
+                            <p>６月３０日 夏越の大祓</p>
+                        </div>
+                        <div class="slide2">
+                            <img src="images/tanabata.jpg" alt="七夕">
+                            <p>７月７日 七夕祭り</p>
+                        </div>
+                        <div class="slide2">
+                            <img src="images/sitigosan.jpg" alt="七五三">
+                            <p>１１月中 七五三詣</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="arrow" onclick="nextSlide()">&#9655;</div>
+            </div>
+        </section>
+
+        <section id="sem" class="section">
+            <p class="fade-in" id="con2">
+                神社巡りは、日本の文化や歴史に触れる良い機会です。<br>
+                ぜひ、あなたにとって特別な神社を見つけて、癒しやパワーを感じてください。
+            </p>
+        </section>
+
+        <section class="section3" id="section3">
+            <div class="jinja_title">
+                <h2 class="fade-in">神社探し<span>Tokyo Shrines</span></h2>
+            </div>
+            <div id="map" class="fade-in">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d36662.43186168966!2d139.76731220800752!3d35.68852952308031!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z56We56S-!5e0!3m2!1sja!2sjp!4v1740020632144!5m2!1sja!2sjp" width="2000" height="700"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        <section id="arb" class="section">
+            <p class="fade-in" id="con2">
+                みんなの旅
+            </p>
+            <a href="upload.html" class="btn fade-in" target="_blank">投稿する</a>
+        </section>
+        
+        <section id="gallery" class="gallery">
+            <div class="scroll-container">
+                <div class="section4 fade-in">
+                    <div class="fon-container">
+                        <div class="fon">静かな心で巡る神社の旅</div>
+                    </div>
+                    
+                    <div class="image-container">
+                        <img src="images/Image (13).jpg" alt="画像1">
+                    </div>
+                    
+                    
+                </div>
+                <div class="section4 fade-in">
+                    
+                    <div class="image-container">
+                        <img src="images/Image (14).jpg" alt="画像2">
+                    </div>
+                    <div class="fon-container">
+                        <div class="fon">四季折々の景色を感じる</div>
+                    </div>
+                    
+                </div>
+                <div class="section4 fade-in">
+                    <div class="image-container">
+                        <img src="images/Image (16).jpg" alt="画像3">
+                    </div>
+                    <div class="fon-container">
+                        <div class="fon">静けさの中で社をお参りする</div>
+                    </div>
+                    
+                </div>
+                <div class="section4 fade-in">
+                    <div class="image-container">
+                        <img src="images/Image (17).jpg" alt="画像4">
+                    </div>
+                    <div class="fon-container">
+                        <div class="fon">守り継がれる町並み 古き良きを知る</div>
+                    </div>
+                    
+                </div>
+                <div class="section4 fade-in">
+                    <div class="image-container">
+                        <img src="images/Image (21).jpg" alt="画像5">
+                    </div>
+                    <div class="fon-container">
+                        <div class="fon">ご縁を結ぶ、神々のもとへ</div>
+                    </div>
+                    
+                </div>
+                <div class="section4 fade-in">
+                    <div class="image-container">
+                        <img src="images/Image (20).jpg" alt="画像6">
+                    </div>
+                    <div class="fon-container">
+                        <div class="fon">光と影が織りなす、神秘の参道
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="section4 fade-in">
+                    
+                    <div class="image-container">
+                        <img src="images/Image (24).jpg" alt="画像7">
+                    </div>
+                    <div class="fon-container">
+                        <div class="fon">心を清め、祈りとともに歩む</div>
+                    </div>
+                    
+                </div>
+                <div class="section4 fade-in">
+                    <div class="image-container">
+                        <img src="images/Image (22).jpg" alt="画像8">
+                    </div>
+                    <div class="fon-container">
+                        <div class="fon">風に舞う祈り、神々のもとへ</div>
+                        
+                    </div>
+                </div>
+                <div class="section4 fade-in">
+                    <div class="image-container">
+                        <img src="images/Image (23).jpg" alt="画像9">
+                    </div>
+                    <div class="fon-container">
+                        <div class="fon">波音とともに祈る、海辺の神社巡り</div>
+                    </div>
+                    
+                </div>
+                <div class="section4 fade-in">
+                    <div class="image-container">
+                        <img src="images/Image (25).jpg" alt="画像10">
+                    </div>
+                    <div class="fon-container">
+                        <div class="fon">四季折々の神々の彩りを巡る</div>
+                    </div>
+                    
+                </div>
+                <div class="section4 fade-in">
+                    <div class="image-container">
+                        <img src="images/Image (26).jpg" alt="画像11">
+                    </div>
+                    <div class="fon-container">
+                        <div class="fon">朱の鳥居をくぐるたび、新たな縁が結ばれる</div>
+                    </div>
+                    
+                </div>
+                <div class="section4 fade-in">
+                    <div class="image-container">
+                        <img src="images/Image (27).jpg" alt="画像12">
+                    </div>
+                    <div class="fon-container">
+                        <div class="fon">古の息吹を感じる、静寂の巡礼</div>
+                    </div>
+                    
+                </div>
+                <div class="section4 fade-in">
+                    <div class="image-container">
+                        <img src="images/Image (28).jpg" alt="画像13">
+                    </div>
+                    <div class="fon-container">
+                        <div class="fon">風に舞う祈り、神々のもとへ</div>
+                    </div>
+                    
+                </div>
+                <div class="section4 fade-in">
+                    <div class="image-container">
+                        <img src="images/Image (29).jpg" alt="画像14">
+                    </div>
+                    <div class="fon-container">
+                        <div class="fon">神秘と出会う、心の旅</div>
+                    </div>
+                    
+                </div>
+                <div class="section4 fade-in">
+                    <div class="image-container">
+                        <img src="images/Image (31).jpg" alt="画像15">
+                    </div>
+                    <div class="fon-container">
+                        <div class="fon">鈴の音に導かれ、心澄ます旅</div>
+                    </div>
+                    
+                </div>
+                <div class="section4 fade-in">
+                    <div class="image-container">
+                        <img src="images/Image (32).jpg" alt="画像16">
+                    </div>
+                    <div class="fon-container">
+                        <div class="fon">光射す参道、神の導きを感じて</div>
+                    </div>
+                </div>
+                <div class="section4 fade-in">
+                    <div class="image-container">
+                        <img src="images/Image (33).jpg" alt="画像17">
+                    </div>
+                    <div class="fon-container">
+                        <div class="fon">運命を紡ぐ、神々との邂逅</div>
+                    </div>
+                    
+                </div>
+                <div class="section4 fade-in">
+                    <div class="image-container">
+                        <img src="images/Image (34).jpg" alt="画像18">
+                    </div>
+                    <div class="fon-container">
+                        <div class="fon">足元を整え、一歩ずつ神のもとへ</div>
+                    </div>
+                    
+                </div>
+                <div class="section4 fade-in">
+                    <div class="image-container">
+                        <img src="images/rei.jpg" alt="画像18">
+                    </div>
+                    <div class="fon-container">
+                        <div class="fon">歴史を辿る、神社と城の巡礼</div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section id="button" class="section">
+            <a href="gallery.html" class="btn fade-in" target="_blank">ギャラリーへ</a>
+        </section>
+
+
+        <section id="sem2" class="section">
+            <p class="fade-in" id="con2">
+                参りましょう、文化と自然のハーモニー
+            </p>
+        </section>
+
+
+
+        <section id="shrines2" class="section1">
+            <div class="jinja_title" id="mana">
+                <h2 class="fade-in">お参り<span>Shrinevisit</span></h2>
+                <a href="mana.html" class="fade-in">MORE</a>
+            </div>
+            <div class="content_wrapper"><!--flexコンテナ-->
+                <div class="content_img fade-in"><!--flexアイテム：右（画像）-->
+                    <a href="mana.html"><img src="images/rei2.jpg" width="450" height="700" alt="神田神社"></a>
+                </div>
+                <div class="content_text"><!--flexアイテム：左（文章）-->
+                    <h2 class="fade-in">参拝マナー</h2>
+                        <p class="jinja_name fade-in">
+                            日本の長い歴史の中で大切に守られてきた神社。鳥居をくぐり、参道を進むと社殿が見えてきます。社殿の前に立つと神さまの存在が一層身近に感じられます。そして神さまに日頃の感謝や願いをお伝えする…。<br>
+                            神社参拝の際、皆様の心の表し方としてお役に立てれば幸いです。 
+                        </p>
+                        <div class="btn_wrapper fade-in">
+                            <a href="mana.html" >詳しくはこちら  ➞</a>
+                        </div>
+                </div>   
+            </div>
+            <div class="content_wrapper" id="sakai"><!--flexコンテナ-->
+                <div class="content_text"><!--flexアイテム：左（文章）-->
+                    <h2 class="fade-in">境内の紹介</h2>
+                        <p class="jinja_name fade-in">
+                            境内とは、「神社が鎮座する敷地」を指します。<br>
+                            神さまをお祀りする場所として各地に存在する神社ですが、神社によって境内のつくりはさまざまです。<br>
+                            ただし、鳥居や手水舎、拝殿・本殿等、基本的な呼称や用途は共通しており、その一つひとつの意味を理解しているとまた神社へのおまいりの仕方も変わるのではないでしょうか。
+                        </p>
+                        <div class="btn_wrapper fade-in">
+                            <a href="sakai.html" >詳しくはこちら  ➞</a>
+                        </div>
+                </div>
+                <div class="content_img fade-in"><!--flexアイテム：右（画像）-->
+                    <a href="sakai.html"><img src="images/sakai.jpg" width="450" height="700" alt="明治神宮"></a>
+                </div>
+            </div>
+            
+
+                
+        </section>
+
+        <section id="goods" class="section5">
+            <div class="jinja_title" >
+                <h2 class="fade-in">グッズ<span>goods</span></h2>
+            </div>
+
+            <div class="details-wrap fade-in">
+                <details class="details js-details">
+                  <summary class="details-summary js-details-summary"><img src="images/omamori.jpg" alt="お守り" width="880" height="500"></summary>
+                  <div class="details-content js-details-content">
+                    <p>お守り（おまもり、御守り、御守）とは、厄除け（魔除け）、招福（開運、幸運）、加護などの人の願いを象った物品（縁起物）である。護符、御符とも呼ばれる。</p>
+                  </div>
+                </details>
+                <details class="details js-details">
+                  <summary class="details-summary js-details-summary"><img src="images/ema.jpg" alt="絵馬" width="880" height="500"></summary>
+                  <div class="details-content js-details-content">
+                    <p>絵馬（えま）は、神社や寺院に祈願するとき、あるいは祈願した願いが叶ってその謝礼をするときに社寺に奉納する、絵が描かれた木製の板である。</p>
+                  </div>
+                </details>
+                <details class="details js-details">
+                  <summary class="details-summary js-details-summary"><img src="images/kitune.jpeg" alt="狐めくじ" width="880" height="500"></summary>
+                  <div class="details-content js-details-content">
+                    <p>キツネさまのおみくじ</p>
+                  </div>
+                </details>
+                <details class="details js-details">
+                  <summary class="details-summary js-details-summary"><img src="images/daruma.jpg" alt="達磨めくじ" width="880" height="500"></summary>
+                  <div class="details-content js-details-content">
+                    <p>凛々しいお顔のだるまさんです。</p>
+                  </div>
+                </details>
+                <details class="details js-details">
+                  <summary class="details-summary js-details-summary"><img src="images/sirohebimikuji.jpg" alt="白蛇めくじ" width="880" height="500"></summary>
+                  <div class="details-content js-details-content">
+                    <p>白へびのかわいらしいおみくじ。</p>
+                  </div>
+                </details>
+                <details class="details js-details">
+                    <summary class="details-summary js-details-summary"><img src="images/gosinsatu.jpg" alt="ご神札" width="880" height="500"></summary>
+                    <div class="details-content js-details-content">
+                      <p>御神札（ごしんさつ、おふだ）、お札（おふだ）などともいい、神社から下賜（かし）されるもののうち最も重要な神の璽（しるし）であるとする 。</p>
+                    </div>
+                  </details>
+                  <details class="details js-details">
+                    <summary class="details-summary js-details-summary"><img src="images/gosyuin.jpg" alt="ご朱印" width="880" height="500"></summary>
+                    <div class="details-content js-details-content">
+                      <p>神社やお寺で拝受する「御朱印」は、参拝した証としていただく神仏とのご縁の記録です。</p>
+                    </div>
+                  </details>
+              </div>
+            <p class="fade-in">神社のゴーズ、いわば授与品には、御神札、御守、絵馬、撤饌などがあります</p>
+           
+        </section> 
+
+        <section id="sem2" class="section">
+            <p class="fade-in" id="con2">
+                四季折々、
+                神社と人が魅せる
+                畏敬と感謝の心
+            </p>
+        </section>
+    </div>
+
+   
+
+    <footer>
+        <a href="index.html" class="footer_logo">ENISI</a>
+        <div>
+            <nav id="primary_nav_wrap">
+                <ul>
+                    <li class="current-menu-item"><a href="#TOP">ホームページ</a></li>
+                    <li><a href="#meet">巡り合い</a>
+                        <ul>
+                            <li><a href="#shrines">神社</a></li>
+                            <li><a href="#section3">地図</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#mana">お参り</a>
+                        <ul>
+                        <li><a href="#mana">参拝マナー</a></li>
+                        <li><a href="#sakai">境内の紹介</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#gallery">ギャラリー</a></li>
+                    <li><a href="#goods">グッズ</a>
+                    </li>
+                </ul>
+            </nav>
+            <p><small>&copy; 2025 神々しい縁 - 神社巡り</small></p>
+        </div>
+        <a href="index.html" class="footer_logo">縁</a>
+    </footer>
+    <script src="js/index.js" defer></script>
+    <script src="js/announce.js" defer></script>
+  
+</body>
+</html>
